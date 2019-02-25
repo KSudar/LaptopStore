@@ -15,7 +15,7 @@ const server = http.createServer((req, res) => {
         res.end('This is the PRODUCTS page');
     }else if(pathName === '/laptop' && id < laptopData.length){
         res.writeHead(200, {'Content-type': 'text/html'});
-        res.end(`This is the LAPTOP page for laptop ${id}!`);
+        fs.readFile();
     }else{
         res.writeHead(404, {'Content-type': 'text/html'});
         res.end('URL was not found on the server');
